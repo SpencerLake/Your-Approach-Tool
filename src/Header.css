@@ -1,0 +1,53 @@
+header {
+    height: 5vh;
+    width: 100vw;
+    background: grey;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    outline: inherit;
+}
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 2rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger {
+    width: 1.5rem;
+    height: .2rem;
+    background: darkgrey;
+    border-radius: .4rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 1.5rem;
+    height: .2rem;
+    background: darkgrey;
+    border-radius: .4rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-.4rem);
+}
+
+.menu-btn__burger::after {
+    transform: translateY(.4rem);
+}
