@@ -1,9 +1,10 @@
 header {
-    height: 5vh;
+    height: 10vh;
     width: 100vw;
     background: grey;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 button {
@@ -26,8 +27,8 @@ button {
 }
 
 .menu-btn__burger {
-    width: 1.5rem;
-    height: .2rem;
+    width: 2rem;
+    height: .3rem;
     background: darkgrey;
     border-radius: .4rem;
     transition: all .5s ease-in-out;
@@ -37,17 +38,26 @@ button {
 .menu-btn__burger::after {
     content: '';
     position: absolute;
-    width: 1.5rem;
-    height: .2rem;
+    width: 2rem;
+    height: .3rem;
     background: darkgrey;
     border-radius: .4rem;
     transition: all .5s ease-in-out;
 }
 
 .menu-btn__burger::before {
-    transform: translateY(-.4rem);
+    transform: translateY(-.6rem);
 }
 
 .menu-btn__burger::after {
-    transform: translateY(.4rem);
+    transform: translateY(.6rem);
+}
+
+.profile-pic {
+    min-height: 40px;
+    min-width: 40px;
+    border-radius: 50%;
+    background: khaki;
+    margin-left: 17px;
+    margin-right: 17px;
 }
